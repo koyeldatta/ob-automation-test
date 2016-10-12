@@ -1,0 +1,117 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 29,
+        "name": "",
+        "description": "",
+        "id": "test-and-validate-the-body-of-the-insights-page;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 603911469,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OBInsightsBody.wrapUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9910067094,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am on Insights Page",
+            "match": {
+              "location": "OBInsightsBody.i_am_on_Insights_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 190300453,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I select View as \"Account Management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Account Management",
+                  "offset": 18
+                }
+              ],
+              "location": "OBInsightsBody.i_select_View_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10150027890,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I select from as \"201610\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201610",
+                  "offset": 18
+                }
+              ],
+              "location": "OBInsightsBody.i_select_from_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50268708,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Insight page has expected message as \"No posts found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "No posts found",
+                  "offset": 38
+                }
+              ],
+              "location": "OBInsightsBody.insight_page_has_expected_message_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testOBInsightBody"
+          }
+        ]
+      }
+    ],
+    "name": "Test and validate the body of the Insights Page",
+    "description": "",
+    "id": "test-and-validate-the-body-of-the-insights-page",
+    "keyword": "Feature",
+    "uri": "OBInsightsBody.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@testOBInsightBody"
+      }
+    ]
+  }
+]
